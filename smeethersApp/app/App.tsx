@@ -25,6 +25,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import Section from './components/Section/Section';
+import Text from './components/Text/Text';
 
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -36,6 +37,7 @@ const App: () => Node = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <Text tx="common.cancel" />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>

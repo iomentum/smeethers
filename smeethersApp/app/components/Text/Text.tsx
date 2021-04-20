@@ -5,7 +5,7 @@ import {presets} from './Text.presets';
 import {TextProps} from './Text.props';
 import {translate} from '../../i18n';
 
-export const Text: FC<TextProps> = ({
+const Text: FC<TextProps> = ({
   preset = 'default',
   tx,
   txOptions,
@@ -32,3 +32,5 @@ export const Text: FC<TextProps> = ({
     </ReactNativeText>
   );
 };
+
+export default Text;
