@@ -1,12 +1,4 @@
 {
   "name": "smeethersApp",
-  "displayName": "smeethersApp",
-  "expo": {
-    "name": "smeethersApp",
-    "slug": "smeethersApp",
-    "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
-  }
+  "displayName": "smeethersApp"
 }
