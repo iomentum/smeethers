@@ -27,6 +27,7 @@ import type {Node} from 'react';
 // import Section from './components/Section/Section';
 // import Text from './components/Text/Text';
 import LoginScreen from './screens/login-screen/login-screen';
+import SplashScreen from './screens/splash-screen/splash-screen';
 
 const App: () => Node = () => {
   // const isDarkMode = useColorScheme() === 'dark';
@@ -36,7 +37,9 @@ const App: () => Node = () => {
   // };
 
   return (
-    <LoginScreen />
+    // <LoginScreen />
+    <SplashScreen />
+
     // <SafeAreaView style={backgroundStyle}>
     //   <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
     //   <Text tx="common.cancel" />
