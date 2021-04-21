@@ -1,13 +1,13 @@
 import React from 'react';
-import {View} from 'react-native';
 import Text from '../../components/Text/Text';
+import Screen from '../../components/Screen/Screen';
 // import Screen from '../../components/Screen/Screen';
 
 const LoginScreen = () => {
   return (
-    <View>
+    <Screen>
       <Text text="LoginScreen" />
-    </View>
+    </Screen>
   );
 };
 
