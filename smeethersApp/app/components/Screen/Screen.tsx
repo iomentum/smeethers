@@ -1,10 +1,19 @@
 import React, {FC} from 'react';
-import {View} from 'react-native';
+import {StatusBar} from 'react-native';
+import {ScreenBox} from './Screen.styles';
 
-interface ScreenProps {}
+interface ScreenProps {
+  children?: FC;
+}
 
-const Screen: FC<ScreenProps> = ({children}) => {
-  return <View style={{backgroundColor: 'red', flex: 1}}>{children}</View>;
+const Screen: FC<ScreenProps> = (props: ScreenProps) => {
+  return (
+    <ScreenBox>
+      <StatusBar barStyle="light-content" />
+
+      {props.children}
+    </ScreenBox>
+  );
 };
 
 export default Screen;

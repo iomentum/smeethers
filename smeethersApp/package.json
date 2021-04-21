@@ -1,5 +1,5 @@
 {
-  "name": "smeethersApp",
+  "name": "smeethers-app",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -13,7 +13,8 @@
     "i18n-js": "^3.8.0",
     "react": "17.0.1",
     "react-native": "0.64.0",
-    "react-native-localize": "^2.0.3"
+    "react-native-localize": "^2.0.3",
+    "styled-components": "^5.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
