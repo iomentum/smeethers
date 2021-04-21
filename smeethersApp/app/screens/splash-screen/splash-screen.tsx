@@ -2,11 +2,14 @@ import React from 'react';
 import {ActivityIndicator} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {color} from '../../theme';
+import {loadToken} from '../../utils/storage';
 import Screen from '../../components/Screen/Screen';
 import Text from '../../components/Text/Text';
 
 const SplashScreen = () => {
   const navigation = useNavigation();
+
+  console.log(loadToken());
 
   return (
     <Screen>
