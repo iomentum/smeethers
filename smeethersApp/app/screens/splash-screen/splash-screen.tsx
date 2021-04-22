@@ -5,6 +5,7 @@ import {color} from '../../theme';
 import {loadToken} from '../../utils/storage';
 import Screen from '../../components/Screen/Screen';
 import Text from '../../components/Text/Text';
+import SmeethersLogo from '../../components/Svg/SmeethersLogo';
 
 const SplashScreen = () => {
   const navigation = useNavigation();
@@ -13,6 +14,7 @@ const SplashScreen = () => {
 
   return (
     <Screen>
+      <SmeethersLogo />
       <ActivityIndicator size="large" color={color.primary} />
       <Text onPress={() => navigation.navigate('login')} text="navigate" />
     </Screen>
