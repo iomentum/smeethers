@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import Text from '../../components/Text/Text';
-// import {color, typography} from '../../theme';
+import {vw} from '../../utils/viewport-units';
 
 export const HeaderBox = styled.View`
   flex-direction: row;
@@ -8,10 +8,8 @@ export const HeaderBox = styled.View`
   padding: 24px;
 `;
 
-// TODO: spaces in wh & vw
 export const PendingReplyText = styled(Text)`
-  margin-horizontal: 50px;
-  background-color: red;
+  margin-horizontal: ${vw(8)}px;
   font-size: 16px
   text-align: center;
 `;
