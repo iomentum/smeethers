@@ -1,22 +1,27 @@
 import React from 'react';
-import {ActivityIndicator} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {color} from '../../theme';
-import {loadToken} from '../../utils/storage';
+// import {loadToken} from '../../utils/storage';
+import {styles} from './splash-screen.styles';
 import Screen from '../../components/Screen/Screen';
-import Text from '../../components/Text/Text';
+import LoadingWheel from '../../components/LoadingWheel/LoadingWheel';
 import SmeethersLogo from '../../components/Svg/SmeethersLogo';
 
 const SplashScreen = () => {
   const navigation = useNavigation();
 
-  console.log(loadToken());
+  setTimeout(() => {
+    // TODO: Make some token verifications
+    // console.log(loadToken());
+
+    // fake loader
+    navigation.navigate('login');
+  }, 2000);
 
   return (
-    <Screen>
+    <Screen customStyles={styles.screenCustomStyles}>
       <SmeethersLogo />
-      <ActivityIndicator size="large" color={color.primary} />
-      <Text onPress={() => navigation.navigate('login')} text="navigate" />
+      <LoadingWheel customStyles={styles.loadingWheelCustomStyles} />
     </Screen>
   );
 };
