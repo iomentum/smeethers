@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {saveToken} from '../../utils/storage';
 import Text from '../../components/Text/Text';
@@ -8,6 +8,11 @@ const LoginScreen = () => {
   saveToken('hehe token');
 
   const navigation = useNavigation();
+
+  useEffect(
+    () => navigation.addListener('beforeRemove', e => e.preventDefault()),
+    [navigation],
+  );
 
   return (
     <Screen>
