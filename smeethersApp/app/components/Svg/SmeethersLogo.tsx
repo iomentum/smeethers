@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {FC} from 'react';
 import Svg, {Path, Defs, Pattern, Use, Image} from 'react-native-svg';
 
-function SmeethersLogo() {
+function SmeethersLogo(): FC {
   return (
     <Svg
       xmlns="http://www.w3.org/2000/svg"
