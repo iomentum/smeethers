@@ -1,6 +1,5 @@
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
-import {color} from '../../theme';
 // import {loadToken} from '../../utils/storage';
 import {styles} from './splash-screen.styles';
 import Screen from '../../components/Screen/Screen';
