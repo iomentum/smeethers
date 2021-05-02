@@ -2,5 +2,13 @@
   "common": {
     "cancel": "annuler",
     "next": "suivant"
+  },
+  "menuBurger": {
+    "profile": "profile",
+    "calendar": "calendrier",
+    "googleCalendar": "google Calendar",
+    "myFriends": "mes amis",
+    "settings": "paramètres",
+    "logout": "Me déconnecter"
   }
 }

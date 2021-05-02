@@ -18,6 +18,7 @@ const LoginScreen = () => {
     <Screen>
       <Text text="LoginScreen" />
       <Text text="connect" onPress={() => navigation.navigate('home')} />
+      <Text text="menu-Burger" onPress={() => navigation.navigate('burger')} />
     </Screen>
   );
 };
