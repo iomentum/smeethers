@@ -16,36 +16,39 @@ interface MenuBurgerProps {}
 const MenuBurger: FC<MenuBurgerProps> = props => {
   const {}: MenuBurgerProps = props;
 
-  const tx = (text: string) => translate(text);
   const navigation = useNavigation();
 
-  const goToLogin = () => navigation.navigate('login');
+  const goBack = () => navigation.goBack();
 
   return (
     <ContainerView>
-      <BlackCrossTouchableOpacity onPress={() => goToLogin()}>
+      <BlackCrossTouchableOpacity onPress={() => goBack()}>
         <BlacCross />
       </BlackCrossTouchableOpacity>
       <MenuContainer>
-        <MenuText onPress={() => console.log('goToProfile')}>
-          {tx('menuBurger.profile')}
-        </MenuText>
+        <MenuText
+          tx={'menuBurger.profile'}
+          onPress={() => console.log('goToProfile')}
+        />
         <>
-          <MenuText onPress={() => console.log('goToCalendar')} isNoMargin>
-            {tx('menuBurger.calendar')}
-          </MenuText>
-          <SmallText>{tx('menuBurger.googleCalendar')}</SmallText>
+          <MenuText
+            tx={'menuBurger.calendar'}
+            onPress={() => console.log('goToCalendar')}
+            isNoMargin
+          />
+
+          <SmallText tx={'menuBurger.googleCalendar'} />
         </>
-        <MenuText onPress={() => console.log('goToMyFriends')}>
-          {tx('menuBurger.myFriends')}
-        </MenuText>
-        <MenuText onPress={() => console.log('goTozbi')}>
-          {tx('menuBurger.settings')}
-        </MenuText>
+        <MenuText
+          tx={'menuBurger.myFriends'}
+          onPress={() => console.log('goToMyFriends')}
+        />
+        <MenuText
+          tx={'menuBurger.settings'}
+          onPress={() => console.log('goTozbi')}
+        />
       </MenuContainer>
-      <DisconnectText onPress={() => goToLogin()}>
-        {tx('menuBurger.logout')}
-      </DisconnectText>
+      <DisconnectText tx={'menuBurger.logout'} onPress={() => goBack()} />
     </ContainerView>
   );
 };

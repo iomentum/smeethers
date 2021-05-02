@@ -3,8 +3,7 @@ import Text from '../../components/Text/Text';
 import {color, typography} from '../../theme';
 
 export const ContainerView = styled.View`
-  width: 100%;
-  height: 100%;
+  flex: 1;
 `;
 
 export const BlackCrossTouchableOpacity = styled.TouchableOpacity`
@@ -17,7 +16,6 @@ export const MenuContainer = styled.View`
 `;
 
 export const MenuText = styled(Text)`
-  color: ${color.font};
   font-family: ${typography.primary};
   font-size: 36px;
   text-align: center;
@@ -26,7 +24,6 @@ export const MenuText = styled(Text)`
 `;
 
 export const SmallText = styled(Text)`
-  color: ${color.font};
   font-family: ${typography.primary};
   font-size: 13px;
   line-height: 14px;
@@ -36,7 +33,6 @@ export const SmallText = styled(Text)`
 `;
 
 export const DisconnectText = styled(Text)`
-  color: ${color.font};
   font-family: ${typography.primary};
   font-size: 18px;
   line-height: 21px;
