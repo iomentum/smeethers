@@ -4,6 +4,14 @@
     "next": "suivant",
     "slogan": "Pour vous servir"
   },
+  "menuBurger": {
+    "profile": "profile",
+    "calendar": "calendrier",
+    "googleCalendar": "google Calendar",
+    "myFriends": "mes amis",
+    "settings": "paramètres",
+    "logout": "Me déconnecter"
+  },
   "login": {
     "forgottenPassword": "Mot de passe oublié ?",
     "email": "Email",
