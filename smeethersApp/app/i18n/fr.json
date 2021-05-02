@@ -1,7 +1,8 @@
 {
   "common": {
     "cancel": "annuler",
-    "next": "suivant"
+    "next": "suivant",
+    "slogan": "Pour vous servir"
   },
   "menuBurger": {
     "profile": "profile",
@@ -10,5 +11,10 @@
     "myFriends": "mes amis",
     "settings": "paramètres",
     "logout": "Me déconnecter"
+  },
+  "login": {
+    "forgottenPassword": "Mot de passe oublié ?",
+    "email": "Email",
+    "password": "Mot de passe"
   }
 }
